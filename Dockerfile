@@ -10,6 +10,8 @@ RUN npm install
 
 COPY . /usr/src/app/
 
-EXPOSE 3000
+RUN rm -rf /usr/src/app/terraform
+
+EXPOSE 80
 
 CMD ["npm", "start"]
