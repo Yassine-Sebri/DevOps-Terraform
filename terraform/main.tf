@@ -28,7 +28,7 @@ resource "azurerm_container_group" "container_group" {
 
   container {
     name = "devops-terraform"
-    image = "ysebri/devops-terraform"
+    image = "ysebri/devops-terraform:${var.image_tag}"
     cpu = "1"
     memory = "1"
     

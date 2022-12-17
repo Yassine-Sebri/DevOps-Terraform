@@ -12,3 +12,8 @@ variable "resource_group_location" {
   description = "Region in which Azure Resources are to be created"
   default = "eastus"
 }
+
+variable "image_tag" {
+  type = string
+  description = "Latest Docker Image Tag"
+}
