@@ -4,7 +4,7 @@ const app = express();
 const port = 80;
 
 app.listen(port, '0.0.0.0', ()=> {
-    console.log(`App listening at http://localhost:${port}`)
+    console.log(`App listening at port: ${port}`)
 } );
 
 app.get('/', function(req, res) {
